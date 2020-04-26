@@ -1,14 +1,26 @@
 //  INTRODUÇÃO AO JavaScript
 
 
-/*                                                     Sinais de atribuição JS
+                                                      //Sinais de atribuição JS
+
+/*  
+/= --> Dividir
+* (astericos) --> multiplicar
+++ --> soma ou concatena de um em um
+-- (dois simbolos de menos ou hifén) --> subtrai de um em um 
 = --> Atribuição
 == --> Comparação de igualdade
 != --> Comparação de diferença
 === --> Comparação de igualdades e tipos, 
 compara se são iguais e tem o mesmo tipo
+*/
 
 
+//AVISO:
+//esses exemplos só serão mostrados no broswer se vc for até os arquivos de exemplos 
+//pq lá tem o hmtl e a chamada do link javascript pra esse arquivo
+
+/*
 var a = 5;
 var b = 7;
 
@@ -19,14 +31,17 @@ if ( a == b  ) {
 }
 */
 
+
 /*
 //cpf tem q ser colocado entre strings pq é número que não pode ser somado com outro
+
 var cpf = "6754758647";
 var idade = 28;
  
  if (cpf === idade){
      alert("ela são super iguais")
-     foi colocado strings no alert prq se trata de uma frase, se fosse uma operação teria q ser sem aspas
+     foi colocado strings no alert prq se trata de uma frase, se fosse uma operação teria q ser
+     sem aspas
  } else {
      alert(
          "elas não são super iguais"
@@ -46,15 +61,20 @@ var idade = 28;
 //alert sem strings pq se trata de uma operação
 // Abaixo exemplo de operação com incremento
 
-//var a = 5;
-  //  a = a + 2;
-    //alert(a);
-//outra forma de incremento    
+/*
+var a = 5;
+ a = a + 2;
+alert(a);
+*/
+//outra forma de incremento, o resultado no alert será 7    
 
-//var a = 15;
-//a /= 3;
+/*
+var a = 15;
+a /= 3; // /= é dividir
+alert(a);
+*/
 //posso incrementar com qq operador: sendo eles o de adição. multpli., divisão e subtração
-//alert(a);
+
 
 /*
 var a = 15;
@@ -77,58 +97,80 @@ alert(a);
        esse laço de repetição ou loop se faz com um condição de existençia
        ex: o passo só será executado quando i for maior que 10, e do jeito que está não vai acontecer nada pq i 
        não é maior que 10. Um código assim fica um loop infinito e travará o navegador. Então pra isso não acontecer
-       é necessário colocar o i++ para incrementar valor ao i, visto que 1 não é maior que 10 ele precisa do i++ para se tornar maior que 10,     irá aumentando de 
+       é necessário colocar o i++ para incrementar valor ao i, visto que 1 não é maior que 10 ele precisa do i++ para
+       se tornar maior que 10, irá aumentando de 
        1 em 1. se vc for no console.log 
        irá ver q a página só carregou pq foi incrementando um número de um em um.
+*/       
 
+
+/*
         var i = 1;
    while (i > 10) {
        console.log("passo: " + i);
        i++;
       
    }
+  */ 
+   
+  
 
-
+/*
    ---> do while:
         Ele faz o que se manda primeiro pra depois testar a condição de existençia
         mesmo i sendo maior q 6, ele irá executar o passo do console.
         Ex. abaixo:
+*/
 
+/*
 var i = 7;
    do {
     console.log("passo: " + i);
     i++;
  }
    while (i < 6) 
-           
-    
+*/           
+   
 
+/*
    ---> for:
          Ele podemos dizer que é mais eficiente e mais rápido que os outros dois
-         
-   
-   Ex. abaixo:
+         Ex. abaixo:
+*/
 
+/*
    for (var i=8 ; i < 10 ; i++ ) {
-    console.log(
-        "passo: " + 1);
+    console.log("passo: " + 1);
 }
 
 
   for (var i=1 ; i < 10 ; i += 2 ) {
-    console.log(
-        "passo: " + 1);
+    console.log("passo: " + 1);
 }
-/*o exemplo acima mostra que o passo pode ser feito de 2 em 2 peçp i += 2
+*/
+
+/**
+ * Explicaçoes sobre o for:
+ * O For é a estrutura de repetição mais usada e eficiente
+ * Nele declaramos o valor da var dentro do seu própro parãmetro ejá colocamos toda
+ * a estrutura de repetição dentro do parametro
+ * 
+ * var i=1 , signica o valor da var
+ * i < 10 , siginifica que enquanto i for menor q 10, execute este passo -> i += 2
+ * i += 2 , siginifica acrescentar ou concatenar um valor de 2 em 2, ou seja seão executados
+ * 5 passos para q i se torne igual a 10 e acabe minha estrutura de repetição, isso é visto 
+ * pelo console.  
+ *
+ */
+
    
-   */
 
-   /* 
-
+    
 
 
 
 
+/*
 
                                                                                 ---> Funçôes:
 
@@ -154,6 +196,8 @@ var i = 7;
 
                                                                         ---> Função de execução:
                */
+              
+            //função de execução vc tem que chama-la após ser declarada, para q ela execute o q tem no escopo dela
               /*
               function nomePoderoso(){
                 console.log("jeová");
@@ -161,17 +205,30 @@ var i = 7;
              nomePoderoso();
              */
              
+
+
+
              /*
     ---> Função de retorno: 
+    //ela tem um parãmtro no qual esse parãmetro irá ser calculado com alguma operação 
+    //esse parametro em um programa ou algum site q precise fazer calculo será dado pelo o usuário, ou seja
+    //o parãmetro é dado pelo usuário
+    //na função 01 retornará a função de celsiu pra farenheinthe
+    //na função 02 será retornado a média ao aluno após os calculos devidos
     */
+
+
+
+
       /* function converterTemperatura(celsius){
         var fah = (celsius * 1.8) + 32;
           return fah;
        }
           var fahreinhet = converterTemperatura(30);
             console.log(fahreinhet);
-           
+      */     
       
+      /*
             function calcularNota(nota){
 
                 var nota = (nota / 3);
@@ -180,6 +237,9 @@ var i = 7;
               var media = calcularNota(30);  
               console.log(media);
                */
+
+
+
 
                //                                                        ---> FUNCAO CALCULAR DIÁRIA 
                
@@ -549,9 +609,9 @@ var i = 7;
 
 
 
-
-            var nome = "corinthians campeão";
-            console.log(nome.toUpperCase());
+           
+            //var nome = "corinthians campeão";
+            //console.log(nome.toUpperCase());
             //toUppercase deixa letra maiusculas
             //toLowercase deixa todas minusculas
             
