@@ -16,7 +16,7 @@
  * Maneiras de pegar um elemento em Javascript
  * 
  *  document.getElementByild();
- * Tradução: documento pegue elemento por id. By = por ou para, id = a id atrubuída a algum elemento
+ * Tradução: documento pegue elemento por id. By = por ou para, id = a id atrubuída a algum elemento,
  * dentro do parãmetro se coloca o nome da id desejada com aspas, como se usar isso? 
  * atribua uma variável e um nome e a partir daí manipule o elemento
  * Dessa forma: 
