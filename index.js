@@ -186,7 +186,7 @@ var i = 7;
           o segundo nome começa sempre com letra maiusculas e outras minusculas
           ex:  
           function nomeDafunção(){
-              console.log(""); entre as chaves se coloca o console ou o alert
+              console.log(""); //entre as chaves se coloca o o que vai ser executado
           }
            nomeDafunção(); 
            é de suma importancia chamar a função após invocar ela, se chama ela colocando
