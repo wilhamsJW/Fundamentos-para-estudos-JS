@@ -24,20 +24,22 @@
 
     <body>
 <div id="div">
-       <h1 onmouseover="alert('vc passou o mouse')" id="titulo">Wilhams Meira Júnior</h1>
+       <h1 onmouseover="aler('vc passou o mouse, falta o t de alert')" id="titulo">Wilhams Meira Júnior</h1>
        <p id="para">Quer receber mais contéudo? Assine nossa newlestter</p>
-       <input id="campo" type="text"  placeholder="digite seu e-mail" />
+       <input id="campo" onkeydown='digitou(event)'; type="text"  placeholder="digite seu e-mail" />
 
        <button onclick="clickou()" id="button">Enviar Seu E-mail</button>
 
        <h2 id="tema">Mude O Título dessa Página Dinamicamente</h2>
-       <button id="trocar" onclick="mudarTema()" >Clike e mude o tema</button>
+       <button id="trocar" >Clike e mude o tema</button>
+
+       <input onkeydown="digitou(event);"  id="inputt" type="text" name="usuário" value="nome do usuário" />
 
 </div> 
 
 
 
-    <script src="eventsClick.js" type="text/Javascript"></script> 
+    <script src="eventsTeclado.js" type="text/Javascript"></script> 
       </body>
      
 </html>
