@@ -42,11 +42,11 @@ function verde () {
 //essa função faz com o que ao o usuário apertar um botão apareça o email, lembre-se que no css a id email está none
 //ou está oculta, e aqui alteramos ela pra block, assim ao clickar no botão irá aparecer
 
- function mostrarTelefone(e) {  //o e representa a id do botão, ou o botão em si, pq? pq lá no html passei um parâmetro
-                               //chamado this, quando this, me referencio á ele mesmo, this é o próprio botão, evitando
+ function mostrarTelefone(e) {  //o e representa a id do botão, ou o botão em si, pq? pq lá no html passei um parâmetro, dessa form -> onclick="mostrarTelefone(this)
+                               //chamado this, quando falo this, me referencio á ele mesmo, this é o próprio botão, evitando
                               //o document.get...
 
     e.style.display = "none"; // ação criada pra esconder o botão após clickado, 
-    document.getElementById('email').style.display = "block";//esta ação irá fazer aparecer o e-mail
+    document.getElementById('email').style.display = "block";//esta ação irá fazer aparecer o e-mail, o e-mail nãp aparecia pq no css coloquei ele como display: none;
 
  } 
