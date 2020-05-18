@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Fundamentos Javascript</title>
+
+        <style>
+
+                #titulo {
+                    background-color: seagreen;
+                }
+
+               #div {
+                    border: saddlebrown;
+                    text-align: center;
+                    background-color: thistle;
+                  
+                }
+
+                #tema {
+                    size: 45px;
+                    color: slateblue;
+                }
+
+           
+            
+        </style>
+                      
+    </head>
+
+
+    <body>
+<div id="div">
+       <h1 id="titulo" on mouseover="alert('vc passou o mouse, afastei o on de mouseover, por isso não pega')" >
+           Wilhams Meira Júnior</h1>
+
+       <p id="para">Quer receber mais contéudo? Assine nossa newlestter</p>
+
+       <input id="campo" onkeydown='digitou(event)'; type="text"  placeholder="digite seu e-mail" />
+
+       <button onclick="clickou()" id="button">Enviar Seu E-mail</button>
+
+       <h2 id="tema">Mude O Título dessa Página Dinamicamente</h2>
+
+       <button id="trocar" >Clike e mude o tema</button>
+
+       <input onkeydown="digitou(event);"  id="inputt" type="text" name="usuário" value="nome do usuário" />
+
+</div> 
+
+
+
+    <script src="eventsClick.js" type="text/Javascript"></script> 
+      </body>
+     
+</html>
