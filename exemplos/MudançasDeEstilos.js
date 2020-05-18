@@ -1,3 +1,5 @@
+//veja este script com o html Mudançasdeestilos.html nessa mesma pasta
+
 //classList acessa várias açoes, o próprio VsCode mostra isso, vc pode adiconar algo com classList, pode remover algo
 //pode substituir algo, vamos adiconar algo com add
 
@@ -28,7 +30,9 @@ function verde () {
 //pq? pq se vc olhar no inspection do browser, verá q ele add todas as classe ao elemeto, então temos que fazer com que
 //ao adicionar uma classe ele remova a outra, para que fique todos os botôes funcionando normalmente 
 
-//A função irá substituir as class quando for add alguma, dessa forma ficará algo dinãmico muito legal
+//A função irá remover a class existente dentro da id titulo ou do h1 do html, 
+//dessa forma ficará algo dinãmico muito legal
+
  function limpar () {
      document.getElementById('titulo').classList.remove('azul');
      document.getElementById('titulo').classList.remove('vermelho');
