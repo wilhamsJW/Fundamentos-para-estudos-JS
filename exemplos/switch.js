@@ -1,7 +1,7 @@
 //o Switch é usado pra quando temos várias condiçoes para o mesmo parãmetro
 
 
-let dia = 7;
+let dia = 567;
 let diaNoite = '';
 
 switch(dia) {
@@ -28,11 +28,11 @@ switch(dia) {
         diaNome = 'Domingo';
         break;
     default:
-        Error;    
+        diaNome = 'Dia inválido';    
 
 }
 
-document.getElementById('dia').innerHTML = "Hoe é dia" + " " + diaNome;
+document.getElementById('dia').innerHTML = " Hoje é " + " " + diaNome;
 
 
 //este exemplo abaixo só será mostrado no console, troque o valor da var Animal e veja como o console se comporta
