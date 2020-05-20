@@ -70,9 +70,50 @@ let result = nome.substr(8, 13);  //nesse dois parãmetros, o 8 siginifica de on
 console.log(result); 
 */
 
+/*
 let nome = 'wilhams Desenvolvedor Web'; 
 
 let result = nome.substr(-5, 5);   //- 5 ele começa a contar de trás pra frente, então começará no r e pegará 5 caracteres  
                                   
 console.log(result); 
+*/
 
+
+
+//Métodos pra manipular strings  -> Usando o replace 
+
+/*
+let nome = 'wilhams Desenvolvedor Web'; 
+
+let result = nome.replace('Web', 'FullStack'); //recebe dois parãmetros, um parãmetro é pesquise por x e o outro parãmetro é substitua por y
+
+ console.log(result);  //wilhams Desenvolvedor FullStack
+ console.log("nome:", nome); //wilhams Desenvolvedor Web , note q só foi alterado na let result, ele não altera direto na let nome
+ console.log("resultado:", result); //wilhams Desenvolvedor FullStack
+*/
+
+
+//                         Usando o split
+//split transforma uma string em uma array
+
+
+/*
+let nome = 'wilhams Desenvolvedor Web'; 
+
+let result = nome.split(' ');
+
+console.log(result);
+*/
+
+//(3) ["wilhams", "Desenvolvedor", "Web"]
+//ele gera um array com 3 posiçoes, o parãmetro usado foi um espaço, ou seja, onde o split encontrar o espaço
+//ele vai parar e fazer uma array, se ele encontrar outro espaço ele para e gera um outro array, dessa forma
+//ele me gerou um array com 3 posiçoes
+
+
+
+let nome = '1,2,3,4,5,6,7,8,9,10'; 
+
+let result = nome.split(' ');//há diferenças se colocar com espaço ou sem espaço, veja o que o console mostrou
+
+console.log(result);
