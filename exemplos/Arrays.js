@@ -104,7 +104,7 @@ console.log(result);
 // add um item coma ajuda do length
 //length é a quantidade itens q existe no meu array, mas não pe recomendado, o ideal é usar p push q foi feito pra isso
 
-
+/*
 let list = ['email', 'telefone', 'endereço', 'nome'] ;
 
 list[ list.length ] = 'nascimento'; //o length add o item
@@ -112,3 +112,49 @@ list[ list.length ] = 'nascimento'; //o length add o item
 let result = list.toString();
                             
 console.log(result);
+*/
+
+
+
+//Métodos de array 02                       excluindo item   com   splace
+
+
+/*
+let list = ['email', 'telefone', 'endereço', 'nome'] ;
+
+ list.splice(1, 1);  //o parãmetro 1 é a posição do array que quero deletar, parãmetro dois é q quantidade de itens
+                    //que quero remover, o 1 é o telefone e o outro 1 representa a qauntidade de item que quero excluir
+                   //ou seja quero excluir apenas 1 item
+
+let result = list.toString();
+                            
+console.log(result); //email,endereço,nome
+
+*/
+
+
+//                                 concatenando arrays com concat
+
+/*
+let list = ['email', 'telefone', 'endereço', 'nome,'];
+let list2 = ['idade', 'estado civil', 'profissão'];
+
+
+let result = list.toString().concat(list2); //concat concatena a duas strings porém posso fazer isso com +
+                            
+console.log(result); 
+*/
+
+
+//                         sort and reverse         alinhando itens
+
+/*
+let list = ['email', 'telefone', 'endereço', 'nome'] ;
+
+list.sort().reverse();  //sort coloca os itens em ordem alfabética // reverse inverte a ordem alfabética 
+                       //pode se usar ou outro, não necessariamente juntos
+                      //reverse usado sozinho só inverte a ordem que os itens já se encontram, colocando-os de trás p frente 
+let result = list.toString();
+                            
+console.log(result); //telefone,nome,endereço,email / o sort colocou em ordem alfabética e o reverse reverte a ordem alfabética
+*/
