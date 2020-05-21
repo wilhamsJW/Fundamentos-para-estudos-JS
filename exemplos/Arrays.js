@@ -301,3 +301,42 @@ let result = list2;
                             
 console.log(result); 
 */
+
+
+
+
+
+//                                            find and findeIndex
+//nessa mesma função podemos usar o find ou findIndex
+//find me retorna o item desejado
+//findIndex me retorna a posição do item desejado
+
+
+/*
+let list = [
+    {id:1, nome:'wilhams', sobrenome:'Meira'},     //objeto (0) dentro da array
+    {id:2, nome:'paulo',   sobrenome:'rodrigo'},  //objeto (1) dentro da array
+    {id:3, nome:'evandro', sobrenome:'Mesquita'},//objeto (2) dentro da array
+] ;
+let list2 = [];
+
+list2 = list.find(function(item){  //find procura o item desejado   
+                                  //posso procurar pelo ID, nome ou sobrenome  
+       /* 
+        if(item.sobrenome === 'Mesquita') {  //sobrenome é uma propriedade do objeto
+            return true;
+        } else {
+            return false;
+        }
+       */
+      
+    //forma de if ternário
+ 
+  /*  
+
+    return(item.nome == 'paulo') ? true : false;
+});
+
+let result = list2;
+console.log(result); 
+*/
