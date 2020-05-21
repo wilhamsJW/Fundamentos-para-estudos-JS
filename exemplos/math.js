@@ -35,28 +35,33 @@ console.log(calculo); // = 4444
 
 
 
- /*   
+  /* 
   var sorteio;
- var mega = new Array();
+  var mega = new Array();
 
-   var i=0;
-   while( i <6 ){
-      sorteio = Math.ceil(Math.random()*6);
+   var i = 0;
+   while( i < 8 ){ //é a quantidade de pares de números que vão ser selecionados, ou seja o programa escolherá 8 pares entre 0 e 100
+
+      sorteio = Math.ceil(Math.random() * 100); //esse vezes 100 é quantidade de número que pode escolher pra fazer o sorteio, o programa escolhe os números de 0 á 100
           if (mega.indexOf(sorteio) < 0 ) {
              mega.push(sorteio);
              i++;
            }
-             // o i++ acrecentará números de um em um, como 0 não é maior que 6 ele precisa excutar 7 passos
-             //para se tornar maior que 6
-             // o indexOf com o if impossibilita o sorteio de repetir números, pq ele é < 0
-          }
+               //o i++ acrecentará números de um em um, como 0 não é maior que 6 ele precisa excutar 7 passos
+              //para se tornar maior que 6
+             
+            }
              console.log(mega);
           */
 
 
-          
-let newValue = Math.floor(Math.random() * 1000);
-console.log(newValue); //sempre me gerará um número entre 0 e 1000, pode ser usado pra criar uma especie de id
+
+//let newValue = Math.floor(Math.random() * 1000);
+//console.log(newValue); //sempre me gerará um número entre 0 e 1000, pode ser usado pra criar uma especie de id
+
+
+//let newValue = Math.random() * 10;//Math.random(); este método sozinho fica fica multiplicando o númnero até 10, mostrando várias casas decimais, por isso q usamos o método ceil ou floor para alterar essas casas decimais pra cima ou pra baixo
+//console.log(newValue); //3.817401296930054
 
    
           
