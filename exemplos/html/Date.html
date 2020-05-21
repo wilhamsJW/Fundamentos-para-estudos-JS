@@ -16,7 +16,7 @@
                 }
 
 .caixa {
-    height: 50px;
+    height: 150px;
     border-radius: 20px;
     background-color: lawngreen;
     text-align: center;
@@ -28,6 +28,12 @@
     text-align: center;
     border-radius: 5px;
     padding-top: 10px;
+    font-size: 100px;
+       }
+
+       .bt {
+           background: red;
+           color: blanchedalmond;
        }
 
 
@@ -37,10 +43,12 @@
     </head>
 
     <body>
-        <h1 id="h1">Criando um relógio digital com JavaScript puro ou apenas mostrando a hora do pc do usuário de outra forma rsrs</h1>
+        <h1 id="h1">Criando um relógio digital com JavaScript puro </h1>
         <main class="caixa">
             <section id="relogio"></section>
             <section id="data"></section>
+            <button onclick="iniciar();" class="bt">Iniciar</button>
+            <button onclick="pausar();" class="bt">Pausar</button>
         </main> 
 
         <script src="../Date.js"></script> 

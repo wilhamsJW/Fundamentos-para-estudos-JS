@@ -67,15 +67,23 @@ let newValue = date;
 console.log(newValue); //Thu May 28 2020 13:18:57
 */
 
+  
 
 
-// Relógio digital, mostrando como se mostra as horas no browser
 
 
-alert("script01")
+// Relógio digital, com Dois Botôes de iniciar e parar              setInterval/clearInterval
 
 
+
+
+
+
+//alert("seu relógio digital")
+
+/*
 var intervalo, agora;
+let timer;
 
 //explicação de setDoisDigitos abaixo
 function setDoisDigitos(tempo) {
@@ -100,4 +108,32 @@ function iniciar () {
     intervalo = setInterval(mostrarHora);
 }
 
+function iniciar() {
+   timer = setInterval(mostrarHora); //normalmente se coloca uma vírgula e milisegundo pra q a função seja executa de 
+};                                  //milisegundos em milisegundos ou o tempo q vc quiser, mas se vc não colocar nada, automaticamente ficará em milisegundo    
+
+function pausar() {
+    clearInterval(timer);
+}
+
 window.onload = iniciar;
+*/
+
+
+
+
+//                                                setTimeout
+
+
+
+//função criada pra aparecer após dois segundos
+//setTimeout = espera um tempo e roda a função
+
+/*
+function iniciar() {
+setTimeout(function() {
+    alert('rodou');
+    relogio.innerHTML = 'Está funcionando'; //colocando a id relogio diretamente sem o document.querySelector
+}, 2000);
+};
+*/
