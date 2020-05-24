@@ -16,13 +16,13 @@ fetch('https://alunos.b7web.com.br/api/ping')   //se vc olhar no console na aba 
 
 });
 */
-
+/*
 const url = 'https://alunos.b7web.com.br/api/ping';
 const params = {
     method:'POST',
     body:JSON.stringify({ //JSON.stringify = trasnforma de objeto pra string
         nome:'Wilhams',
-        idade:'23',
+        idade:'23'
     })
 };
 
@@ -34,3 +34,55 @@ fetch(url, params)
                        //esses dados   nome:'Wilhams',
                                              //idade:'23',
 });
+
+*/
+
+
+
+//Async Await
+
+function requisitar() {
+
+const url = "https://alunos.b7web.com.br/api/ping";
+const params = {
+    method:'POST',
+    body:JSON.stringify({ //JSON.stringify = trasnforma de objeto pra string
+        nome:'Wilhams',
+        idade:'23'
+    })
+};
+
+fetch(url, params)
+ .then((r) => r.json())
+ .then((json) =>{
+
+    console.log(json); //vc verá esse dado em network -> ping -> lá em baixo procure por request payload e verá 
+                       //esses dados   nome:'Wilhams',
+                                             //idade:'23',
+});
+
+console.log('alguma coisa')
+
+}
+
+ async function requisitar2() {
+
+    const url = "https://alunos.b7web.com.br/api/ping";
+    const params = {
+    method:'POST',
+    body:JSON.stringify({ //JSON.stringify = trasnforma de objeto pra string
+        nome:'Wilhams',
+        idade:'23'
+    })
+   };
+   
+   const r = await fetch(url, params);  //await = faz com que o código do fetch só seja executado quando receba a respsta ou os dados enviados 
+   const json = await r.json();        //basicamente isso q a função async ou assícrona faz, ela faz com que o código só seja executado depois q recebe a resposta
+   console.log(json);
+
+   console.log('Verificação');
+}
+
+
+
+requisitar(); 
